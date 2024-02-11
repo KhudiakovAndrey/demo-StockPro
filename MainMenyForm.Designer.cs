@@ -56,9 +56,16 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.CountLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.listView2 = new System.Windows.Forms.ListView();
+            this.listViewFilter = new System.Windows.Forms.ListView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.button3 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -104,7 +111,7 @@
             // 
             this.tabPage3.Controls.Add(this.comboBox1);
             this.tabPage3.Controls.Add(this.textBox1);
-            this.tabPage3.Controls.Add(this.listView2);
+            this.tabPage3.Controls.Add(this.listViewFilter);
             this.tabPage3.Location = new System.Drawing.Point(23, 4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(1027, 470);
@@ -114,6 +121,7 @@
             // 
             // listView1
             // 
+            this.listView1.CheckBoxes = true;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
@@ -121,6 +129,7 @@
             this.columnHeader4,
             this.columnHeader5,
             this.columnHeader6});
+            this.listView1.FullRowSelect = true;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(3, 54);
             this.listView1.Name = "listView1";
@@ -128,6 +137,7 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.listView1_ItemSelectionChanged);
             // 
             // columnHeader1
             // 
@@ -228,6 +238,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -238,10 +249,12 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Удалить";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.CountLabel);
             this.panel1.Controls.Add(this.listView1);
             this.panel1.Controls.Add(this.button2);
@@ -271,15 +284,22 @@
             this.panel2.Size = new System.Drawing.Size(1052, 521);
             this.panel2.TabIndex = 1;
             // 
-            // listView2
+            // listViewFilter
             // 
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(3, 102);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(1016, 292);
-            this.listView2.TabIndex = 0;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.View = System.Windows.Forms.View.Details;
+            this.listViewFilter.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader9,
+            this.columnHeader10,
+            this.columnHeader11,
+            this.columnHeader12});
+            this.listViewFilter.HideSelection = false;
+            this.listViewFilter.Location = new System.Drawing.Point(3, 102);
+            this.listViewFilter.Name = "listViewFilter";
+            this.listViewFilter.Size = new System.Drawing.Size(1016, 292);
+            this.listViewFilter.TabIndex = 0;
+            this.listViewFilter.UseCompatibleStateImageBehavior = false;
+            this.listViewFilter.View = System.Windows.Forms.View.Details;
             // 
             // textBox1
             // 
@@ -295,6 +315,46 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 2;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Товар_ID";
+            this.columnHeader7.Width = 94;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Наименование";
+            this.columnHeader8.Width = 227;
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "Количество";
+            this.columnHeader9.Width = 142;
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "Цена";
+            this.columnHeader10.Width = 162;
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "Дата_Поступления";
+            this.columnHeader11.Width = 141;
+            // 
+            // columnHeader12
+            // 
+            this.columnHeader12.Text = "Дополнительные_Характеристики";
+            this.columnHeader12.Width = 241;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(3, 397);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(132, 23);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Обновить данные";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // MainMenuForm
             // 
@@ -354,6 +414,13 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.ListView listViewFilter;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.ColumnHeader columnHeader9;
+        private System.Windows.Forms.ColumnHeader columnHeader10;
+        private System.Windows.Forms.ColumnHeader columnHeader11;
+        private System.Windows.Forms.ColumnHeader columnHeader12;
+        private System.Windows.Forms.Button button3;
     }
 }
