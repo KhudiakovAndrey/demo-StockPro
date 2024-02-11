@@ -120,6 +120,9 @@
   <metadata name="товарыBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 91</value>
   </metadata>
+  <metadata name="stockProDB_demoDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="минимальные_Уровни_ТоваровBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>208, 17</value>
   </metadata>
@@ -129,12 +132,17 @@
   <metadata name="расходыBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>777, 54</value>
   </metadata>
-  <metadata name="stockProDB_demoDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="минимальные_Уровни_ТоваровBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>208, 17</value>
-  </metadata>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>StockPro - это программное решение для учета и управления складскими запасами компании. Оно предназначено для компаний различных отраслей, в которых требуется точный контроль за поступлением и расходом товаров на складе.
+
+Функциональные возможности приложения:
+Учет товаров: Приложение позволяет вносить информацию о поступлении новых товаров на склад, включая название товара, количество, цену, дату поступления и другие характеристики.
+
+Расход товаров: Пользователи могут отмечать расход товаров со склада, указывая количество и цель использования. Это позволяет отслеживать общий объем расхода и остаток на складе.
+
+Мониторинг запасов: StockPro предоставляет возможность просматривать текущие запасы товаров на складе, а также историю поступлений и расходов для каждого товара.
+</value>
+  </data>
   <metadata name="минимальные_Уровни_ТоваровTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>515, 17</value>
   </metadata>
@@ -155,11 +163,5 @@
   </metadata>
   <metadata name="пользователиBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 54</value>
-  </metadata>
-  <metadata name="поставкиBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>423, 54</value>
-  </metadata>
-  <metadata name="расходыBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>777, 54</value>
   </metadata>
 </root>
