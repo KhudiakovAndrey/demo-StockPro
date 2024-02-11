@@ -91,6 +91,10 @@
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -107,6 +111,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.поставкиDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.расходыDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.товарыDataGridView)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -422,10 +430,10 @@
             // tabPage2
             // 
             this.tabPage2.AutoScroll = true;
-            this.tabPage2.Controls.Add(this.товарыDataGridView);
-            this.tabPage2.Controls.Add(this.расходыDataGridView);
-            this.tabPage2.Controls.Add(this.поставкиDataGridView);
-            this.tabPage2.Controls.Add(this.минимальные_Уровни_ТоваровDataGridView);
+            this.tabPage2.Controls.Add(this.groupBox4);
+            this.tabPage2.Controls.Add(this.groupBox3);
+            this.tabPage2.Controls.Add(this.groupBox2);
+            this.tabPage2.Controls.Add(this.groupBox1);
             this.tabPage2.Location = new System.Drawing.Point(23, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Size = new System.Drawing.Size(1027, 470);
@@ -441,7 +449,7 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.минимальные_Уровни_ТоваровDataGridView.DataSource = this.минимальные_Уровни_ТоваровBindingSource;
-            this.минимальные_Уровни_ТоваровDataGridView.Location = new System.Drawing.Point(604, 202);
+            this.минимальные_Уровни_ТоваровDataGridView.Location = new System.Drawing.Point(13, 32);
             this.минимальные_Уровни_ТоваровDataGridView.Name = "минимальные_Уровни_ТоваровDataGridView";
             this.минимальные_Уровни_ТоваровDataGridView.Size = new System.Drawing.Size(356, 177);
             this.минимальные_Уровни_ТоваровDataGridView.TabIndex = 0;
@@ -456,7 +464,7 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.поставкиDataGridView.DataSource = this.поставкиBindingSource;
-            this.поставкиDataGridView.Location = new System.Drawing.Point(31, 202);
+            this.поставкиDataGridView.Location = new System.Drawing.Point(16, 32);
             this.поставкиDataGridView.Name = "поставкиDataGridView";
             this.поставкиDataGridView.Size = new System.Drawing.Size(543, 177);
             this.поставкиDataGridView.TabIndex = 1;
@@ -474,7 +482,7 @@
             this.dataGridViewTextBoxColumn10,
             this.dataGridViewTextBoxColumn11});
             this.расходыDataGridView.DataSource = this.расходыBindingSource;
-            this.расходыDataGridView.Location = new System.Drawing.Point(31, 3);
+            this.расходыDataGridView.Location = new System.Drawing.Point(16, 19);
             this.расходыDataGridView.Name = "расходыDataGridView";
             this.расходыDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             this.расходыDataGridView.Size = new System.Drawing.Size(929, 178);
@@ -492,9 +500,9 @@
             this.dataGridViewTextBoxColumn16,
             this.dataGridViewTextBoxColumn17});
             this.товарыDataGridView.DataSource = this.товарыBindingSource;
-            this.товарыDataGridView.Location = new System.Drawing.Point(31, 402);
+            this.товарыDataGridView.Location = new System.Drawing.Point(16, 19);
             this.товарыDataGridView.Name = "товарыDataGridView";
-            this.товарыDataGridView.Size = new System.Drawing.Size(929, 220);
+            this.товарыDataGridView.Size = new System.Drawing.Size(929, 164);
             this.товарыDataGridView.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn7
@@ -635,6 +643,46 @@
             this.dataGridViewTextBoxColumn17.HeaderText = "Дополнительные_Характеристики";
             this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.расходыDataGridView);
+            this.groupBox1.Location = new System.Drawing.Point(15, 20);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(969, 215);
+            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Таблица расходов на товары";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.поставкиDataGridView);
+            this.groupBox2.Location = new System.Drawing.Point(15, 242);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(570, 225);
+            this.groupBox2.TabIndex = 5;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Таблица поставок";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.минимальные_Уровни_ТоваровDataGridView);
+            this.groupBox3.Location = new System.Drawing.Point(591, 242);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(392, 224);
+            this.groupBox3.TabIndex = 6;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Таблица минимальных уровней товаров";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.товарыDataGridView);
+            this.groupBox4.Location = new System.Drawing.Point(15, 484);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(967, 201);
+            this.groupBox4.TabIndex = 7;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Таблица товаров";
+            // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -663,6 +711,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.поставкиDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.расходыDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.товарыDataGridView)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -731,5 +783,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox4;
     }
 }
