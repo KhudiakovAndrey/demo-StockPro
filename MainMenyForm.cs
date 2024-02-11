@@ -61,6 +61,7 @@ namespace demo_training_StockProKSV
         //вывод для фильтрации
         void FillFilterProdList()
         {
+            //Обнови адаптер
             listViewFilter.Items.Clear();
             foreach (DataRow row in stockProDB_demoDataSet.Товары.Rows)
             {
