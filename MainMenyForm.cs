@@ -9,6 +9,7 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace demo_training_StockProKSV
@@ -122,6 +123,50 @@ namespace demo_training_StockProKSV
             FillProdList();
             FillFilterProdList();
             CountLabel.Text = $"Количество чего-то {listViewFilter.Items.Count} из {stockProDB_demoDataSet.Товары.Count}";
+        }
+
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox1.Text == null)
+            {
+                textBox1.Text = "";
+            }
+
+            string strFindProduct = textBox1.Text;
+            listViewFilter.Items.Clear();
+            try
+            {
+                foreach (DataRow Row in stockProDB_demoDataSet.Товары.Select("Наименование LIKE '%" + strFindProduct + "*'"))
+                {
+                    //DataRow TempRow;
+                    string[] items = new string[6];
+                    items[1] = Row[1].ToString();
+                    items[2] = Row[2].ToString();
+                    items[3] = Row[3].ToString();
+                    DateTime date = (DateTime)Row[4]; // Преобразование объекта в тип DateTime
+                    items[4] = date.ToString("yyyy-MM-dd"); // Форматирование даты в строку без времени
+                    items[5] = Row[5].ToString();
+                    ListViewItem listViewItem = new ListViewItem();
+                    listViewItem.Text = Row[0].ToString();
+                    listViewItem.SubItems.AddRange(items);
+                    listViewFilter.Items.Add(listViewItem);
+                }
+                Countlabel2.Text = $"Количество чего-то {listViewFilter.Items.Count} из {stockProDB_demoDataSet.Товары.Count}";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Введите данные для поиска", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+
+            listViewFilter.Items.Clear();
+            FillFilterProdList();
+
         }
     }
 }

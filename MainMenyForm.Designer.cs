@@ -31,7 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.CountLabel = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -39,35 +41,37 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.stockProDB_demoDataSet = new demo_training_StockProKSV.StockProDB_demoDataSet();
-            this.минимальные_Уровни_ТоваровBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.минимальные_Уровни_ТоваровTableAdapter = new demo_training_StockProKSV.StockProDB_demoDataSetTableAdapters.Минимальные_Уровни_ТоваровTableAdapter();
-            this.tableAdapterManager = new demo_training_StockProKSV.StockProDB_demoDataSetTableAdapters.TableAdapterManager();
-            this.пользователиBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.пользователиTableAdapter = new demo_training_StockProKSV.StockProDB_demoDataSetTableAdapters.ПользователиTableAdapter();
-            this.поставкиBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.поставкиTableAdapter = new demo_training_StockProKSV.StockProDB_demoDataSetTableAdapters.ПоставкиTableAdapter();
-            this.расходыBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.расходыTableAdapter = new demo_training_StockProKSV.StockProDB_demoDataSetTableAdapters.РасходыTableAdapter();
-            this.товарыBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.товарыTableAdapter = new demo_training_StockProKSV.StockProDB_demoDataSetTableAdapters.ТоварыTableAdapter();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.CountLabel = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.listViewFilter = new System.Windows.Forms.ListView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.listViewFilter = new System.Windows.Forms.ListView();
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button3 = new System.Windows.Forms.Button();
+            this.stockProDB_demoDataSet = new demo_training_StockProKSV.StockProDB_demoDataSet();
+            this.минимальные_Уровни_ТоваровBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.минимальные_Уровни_ТоваровTableAdapter = new demo_training_StockProKSV.StockProDB_demoDataSetTableAdapters.Минимальные_Уровни_ТоваровTableAdapter();
+            this.tableAdapterManager = new demo_training_StockProKSV.StockProDB_demoDataSetTableAdapters.TableAdapterManager();
+            this.пользователиTableAdapter = new demo_training_StockProKSV.StockProDB_demoDataSetTableAdapters.ПользователиTableAdapter();
+            this.поставкиTableAdapter = new demo_training_StockProKSV.StockProDB_demoDataSetTableAdapters.ПоставкиTableAdapter();
+            this.расходыTableAdapter = new demo_training_StockProKSV.StockProDB_demoDataSetTableAdapters.РасходыTableAdapter();
+            this.товарыTableAdapter = new demo_training_StockProKSV.StockProDB_demoDataSetTableAdapters.ТоварыTableAdapter();
+            this.пользователиBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.поставкиBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.расходыBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.товарыBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.Countlabel2 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stockProDB_demoDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.минимальные_Уровни_ТоваровBindingSource)).BeginInit();
@@ -75,7 +79,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.поставкиBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.расходыBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.товарыBindingSource)).BeginInit();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -107,17 +110,37 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Главная страница";
             // 
-            // tabPage3
+            // panel1
             // 
-            this.tabPage3.Controls.Add(this.comboBox1);
-            this.tabPage3.Controls.Add(this.textBox1);
-            this.tabPage3.Controls.Add(this.listViewFilter);
-            this.tabPage3.Location = new System.Drawing.Point(23, 4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1027, 470);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Фильтрация";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.CountLabel);
+            this.panel1.Controls.Add(this.listView1);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Location = new System.Drawing.Point(6, 8);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1001, 444);
+            this.panel1.TabIndex = 3;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(3, 397);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(132, 23);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Обновить данные";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // CountLabel
+            // 
+            this.CountLabel.AutoSize = true;
+            this.CountLabel.Location = new System.Drawing.Point(3, 381);
+            this.CountLabel.Name = "CountLabel";
+            this.CountLabel.Size = new System.Drawing.Size(35, 13);
+            this.CountLabel.TabIndex = 3;
+            this.CountLabel.Text = "label1";
             // 
             // listView1
             // 
@@ -169,65 +192,16 @@
             this.columnHeader6.Text = "Дополнительные_Характеристики";
             this.columnHeader6.Width = 219;
             // 
-            // stockProDB_demoDataSet
+            // button2
             // 
-            this.stockProDB_demoDataSet.DataSetName = "StockProDB_demoDataSet";
-            this.stockProDB_demoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // минимальные_Уровни_ТоваровBindingSource
-            // 
-            this.минимальные_Уровни_ТоваровBindingSource.DataMember = "Минимальные_Уровни_Товаров";
-            this.минимальные_Уровни_ТоваровBindingSource.DataSource = this.stockProDB_demoDataSet;
-            // 
-            // минимальные_Уровни_ТоваровTableAdapter
-            // 
-            this.минимальные_Уровни_ТоваровTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.UpdateOrder = demo_training_StockProKSV.StockProDB_demoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.Минимальные_Уровни_ТоваровTableAdapter = this.минимальные_Уровни_ТоваровTableAdapter;
-            this.tableAdapterManager.ПользователиTableAdapter = this.пользователиTableAdapter;
-            this.tableAdapterManager.ПоставкиTableAdapter = this.поставкиTableAdapter;
-            this.tableAdapterManager.РасходыTableAdapter = this.расходыTableAdapter;
-            this.tableAdapterManager.ТоварыTableAdapter = this.товарыTableAdapter;
-            // 
-            // пользователиBindingSource
-            // 
-            this.пользователиBindingSource.DataMember = "Пользователи";
-            this.пользователиBindingSource.DataSource = this.stockProDB_demoDataSet;
-            // 
-            // пользователиTableAdapter
-            // 
-            this.пользователиTableAdapter.ClearBeforeFill = true;
-            // 
-            // поставкиBindingSource
-            // 
-            this.поставкиBindingSource.DataMember = "Поставки";
-            this.поставкиBindingSource.DataSource = this.stockProDB_demoDataSet;
-            // 
-            // поставкиTableAdapter
-            // 
-            this.поставкиTableAdapter.ClearBeforeFill = true;
-            // 
-            // расходыBindingSource
-            // 
-            this.расходыBindingSource.DataMember = "Расходы";
-            this.расходыBindingSource.DataSource = this.stockProDB_demoDataSet;
-            // 
-            // расходыTableAdapter
-            // 
-            this.расходыTableAdapter.ClearBeforeFill = true;
-            // 
-            // товарыBindingSource
-            // 
-            this.товарыBindingSource.DataMember = "Товары";
-            this.товарыBindingSource.DataSource = this.stockProDB_demoDataSet;
-            // 
-            // товарыTableAdapter
-            // 
-            this.товарыTableAdapter.ClearBeforeFill = true;
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(907, 410);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(91, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Удалить";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -240,49 +214,45 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // tabPage3
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(907, 410);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Удалить";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.tabPage3.Controls.Add(this.button4);
+            this.tabPage3.Controls.Add(this.Countlabel2);
+            this.tabPage3.Controls.Add(this.label1);
+            this.tabPage3.Controls.Add(this.comboBox1);
+            this.tabPage3.Controls.Add(this.textBox1);
+            this.tabPage3.Controls.Add(this.listViewFilter);
+            this.tabPage3.Location = new System.Drawing.Point(23, 4);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(1027, 470);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Фильтрация";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // label1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.CountLabel);
-            this.panel1.Controls.Add(this.listView1);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(6, 8);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1001, 444);
-            this.panel1.TabIndex = 3;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(96, 60);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(165, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Фильтрация по наименованию";
             // 
-            // CountLabel
+            // comboBox1
             // 
-            this.CountLabel.AutoSize = true;
-            this.CountLabel.Location = new System.Drawing.Point(3, 381);
-            this.CountLabel.Name = "CountLabel";
-            this.CountLabel.Size = new System.Drawing.Size(35, 13);
-            this.CountLabel.TabIndex = 3;
-            this.CountLabel.Text = "label1";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(465, 75);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(165, 21);
+            this.comboBox1.TabIndex = 2;
             // 
-            // panel2
+            // textBox1
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.tabControl1);
-            this.panel2.Location = new System.Drawing.Point(5, 5);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1052, 521);
-            this.panel2.TabIndex = 1;
+            this.textBox1.Location = new System.Drawing.Point(99, 76);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(227, 20);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // listViewFilter
             // 
@@ -300,21 +270,6 @@
             this.listViewFilter.TabIndex = 0;
             this.listViewFilter.UseCompatibleStateImageBehavior = false;
             this.listViewFilter.View = System.Windows.Forms.View.Details;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(53, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(427, 38);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 2;
             // 
             // columnHeader7
             // 
@@ -346,15 +301,95 @@
             this.columnHeader12.Text = "Дополнительные_Характеристики";
             this.columnHeader12.Width = 241;
             // 
-            // button3
+            // stockProDB_demoDataSet
             // 
-            this.button3.Location = new System.Drawing.Point(3, 397);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(132, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Обновить данные";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.stockProDB_demoDataSet.DataSetName = "StockProDB_demoDataSet";
+            this.stockProDB_demoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // минимальные_Уровни_ТоваровBindingSource
+            // 
+            this.минимальные_Уровни_ТоваровBindingSource.DataMember = "Минимальные_Уровни_Товаров";
+            this.минимальные_Уровни_ТоваровBindingSource.DataSource = this.stockProDB_demoDataSet;
+            // 
+            // минимальные_Уровни_ТоваровTableAdapter
+            // 
+            this.минимальные_Уровни_ТоваровTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.UpdateOrder = demo_training_StockProKSV.StockProDB_demoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.Минимальные_Уровни_ТоваровTableAdapter = this.минимальные_Уровни_ТоваровTableAdapter;
+            this.tableAdapterManager.ПользователиTableAdapter = this.пользователиTableAdapter;
+            this.tableAdapterManager.ПоставкиTableAdapter = this.поставкиTableAdapter;
+            this.tableAdapterManager.РасходыTableAdapter = this.расходыTableAdapter;
+            this.tableAdapterManager.ТоварыTableAdapter = this.товарыTableAdapter;
+            // 
+            // пользователиTableAdapter
+            // 
+            this.пользователиTableAdapter.ClearBeforeFill = true;
+            // 
+            // поставкиTableAdapter
+            // 
+            this.поставкиTableAdapter.ClearBeforeFill = true;
+            // 
+            // расходыTableAdapter
+            // 
+            this.расходыTableAdapter.ClearBeforeFill = true;
+            // 
+            // товарыTableAdapter
+            // 
+            this.товарыTableAdapter.ClearBeforeFill = true;
+            // 
+            // пользователиBindingSource
+            // 
+            this.пользователиBindingSource.DataMember = "Пользователи";
+            this.пользователиBindingSource.DataSource = this.stockProDB_demoDataSet;
+            // 
+            // поставкиBindingSource
+            // 
+            this.поставкиBindingSource.DataMember = "Поставки";
+            this.поставкиBindingSource.DataSource = this.stockProDB_demoDataSet;
+            // 
+            // расходыBindingSource
+            // 
+            this.расходыBindingSource.DataMember = "Расходы";
+            this.расходыBindingSource.DataSource = this.stockProDB_demoDataSet;
+            // 
+            // товарыBindingSource
+            // 
+            this.товарыBindingSource.DataMember = "Товары";
+            this.товарыBindingSource.DataSource = this.stockProDB_demoDataSet;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.tabControl1);
+            this.panel2.Location = new System.Drawing.Point(5, 5);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1052, 521);
+            this.panel2.TabIndex = 1;
+            // 
+            // Countlabel2
+            // 
+            this.Countlabel2.AutoSize = true;
+            this.Countlabel2.Location = new System.Drawing.Point(3, 397);
+            this.Countlabel2.Name = "Countlabel2";
+            this.Countlabel2.Size = new System.Drawing.Size(35, 13);
+            this.Countlabel2.TabIndex = 4;
+            this.Countlabel2.Text = "label1";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(6, 413);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(177, 23);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "Сбросить фильтрацию";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // MainMenuForm
             // 
@@ -368,6 +403,8 @@
             this.Load += new System.EventHandler(this.MainMenuForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stockProDB_demoDataSet)).EndInit();
@@ -376,8 +413,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.поставкиBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.расходыBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.товарыBindingSource)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -422,5 +457,8 @@
         private System.Windows.Forms.ColumnHeader columnHeader11;
         private System.Windows.Forms.ColumnHeader columnHeader12;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Countlabel2;
+        private System.Windows.Forms.Button button4;
     }
 }
