@@ -36,18 +36,21 @@ namespace demo_training_StockProKSV
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
+            
             string ConnectionStg = "Data Source=WIN-2J5GGL22MAA\\SQLEXPRESS;Initial Catalog=StockProDB-demo;Integrated Security=True;";
             string login = textBoxLogin.Text;
             string password = textBoxPassword.Text;
             using (SqlConnection connection = new SqlConnection(ConnectionStg) )
             {
                 connection.Open();
+                // проверка пользователя на наличие в базе данных  помощью запроса
                 string authquery = "SELECT COUNT(*) FROM Пользователи WHERE Имя_Пользователя = @Login AND Пароль = @Password";
                 SqlCommand sqlCommand = new SqlCommand(authquery, connection);
                 sqlCommand.Parameters.AddWithValue("Login", login);
                 sqlCommand.Parameters.AddWithValue("Password", password);
                 int count = (int)sqlCommand.ExecuteScalar();
                 {
+                    //Если пользователь есть, открываем доступ к приложению
                     if (count > 0)
                     {
                         MainMenuForm mainMenuForm = new MainMenuForm();
@@ -55,6 +58,7 @@ namespace demo_training_StockProKSV
                         mainMenuForm.ShowDialog();
                         this.Close();
                     }
+                    //В ином случае, вывод с ошибкой
                     else
                     {
                         MessageBox.Show("Неправильный ввод данных при авторизации!", "Ошибка авторизации", MessageBoxButtons.OK, MessageBoxIcon.Error);
