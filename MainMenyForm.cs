@@ -168,5 +168,10 @@ namespace demo_training_StockProKSV
             FillFilterProdList();
 
         }
+
+        private void CountLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

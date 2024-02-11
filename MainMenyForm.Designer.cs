@@ -144,6 +144,7 @@
             this.tabPage1.AutoScroll = true;
             this.tabPage1.BackColor = System.Drawing.Color.White;
             this.tabPage1.Controls.Add(this.panel1);
+            this.tabPage1.Controls.Add(this.listView1);
             this.tabPage1.Location = new System.Drawing.Point(23, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -153,20 +154,19 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.LightGray;
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.CountLabel);
-            this.panel1.Controls.Add(this.listView1);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(6, 8);
+            this.panel1.Location = new System.Drawing.Point(3, 391);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1001, 444);
+            this.panel1.Size = new System.Drawing.Size(1013, 73);
             this.panel1.TabIndex = 3;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(3, 397);
+            this.button3.Location = new System.Drawing.Point(3, 29);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(132, 23);
             this.button3.TabIndex = 4;
@@ -177,11 +177,12 @@
             // CountLabel
             // 
             this.CountLabel.AutoSize = true;
-            this.CountLabel.Location = new System.Drawing.Point(3, 381);
+            this.CountLabel.Location = new System.Drawing.Point(3, 13);
             this.CountLabel.Name = "CountLabel";
             this.CountLabel.Size = new System.Drawing.Size(35, 13);
             this.CountLabel.TabIndex = 3;
             this.CountLabel.Text = "label1";
+            this.CountLabel.Click += new System.EventHandler(this.CountLabel_Click);
             // 
             // listView1
             // 
@@ -195,9 +196,9 @@
             this.columnHeader6});
             this.listView1.FullRowSelect = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(3, 54);
+            this.listView1.Location = new System.Drawing.Point(9, 64);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(998, 321);
+            this.listView1.Size = new System.Drawing.Size(1004, 321);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -236,7 +237,7 @@
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(907, 410);
+            this.button2.Location = new System.Drawing.Point(919, 42);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(91, 23);
             this.button2.TabIndex = 2;
@@ -247,7 +248,7 @@
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(907, 381);
+            this.button1.Location = new System.Drawing.Point(919, 13);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(91, 23);
             this.button1.TabIndex = 1;
@@ -435,6 +436,7 @@
             // tabPage2
             // 
             this.tabPage2.AutoScroll = true;
+            this.tabPage2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.tabPage2.Controls.Add(this.groupBox4);
             this.tabPage2.Controls.Add(this.groupBox3);
             this.tabPage2.Controls.Add(this.groupBox2);
@@ -444,7 +446,6 @@
             this.tabPage2.Size = new System.Drawing.Size(1027, 470);
             this.tabPage2.TabIndex = 3;
             this.tabPage2.Text = "Все таблицы";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // минимальные_Уровни_ТоваровDataGridView
             // 
@@ -690,6 +691,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.BackColor = System.Drawing.Color.LightGray;
             this.tabPage4.Controls.Add(this.richTextBox1);
             this.tabPage4.Location = new System.Drawing.Point(23, 4);
             this.tabPage4.Name = "tabPage4";
@@ -697,7 +699,6 @@
             this.tabPage4.Size = new System.Drawing.Size(1027, 470);
             this.tabPage4.TabIndex = 4;
             this.tabPage4.Text = "О приложении";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // richTextBox1
             // 
@@ -719,7 +720,7 @@
             this.ClientSize = new System.Drawing.Size(1062, 492);
             this.Controls.Add(this.panel2);
             this.Name = "MainMenuForm";
-            this.Text = "Главное окно. ";
+            this.Text = "Главное окно. StockPro";
             this.Load += new System.EventHandler(this.MainMenuForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
